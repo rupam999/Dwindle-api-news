@@ -1,0 +1,21 @@
+{
+  "name": "nodearea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "google-news-json": "^1.0.3",
+    "google-news-rss": "^0.4.1",
+    "inshorts": "^1.0.5",
+    "my-google-news": "^3.0.0",
+    "request": "^2.88.0"
+  }
+}

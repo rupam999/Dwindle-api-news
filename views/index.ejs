@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>All in one API call</title>
+    <style>
+      .mainArea{
+        margin-top: 5%;
+        margin-bottom:10%;
+      }
+      button{
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+      h3{
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="mainArea"> 
+          <div class="row">
+            <div class="col-md-4">
+              <h3>News Area</h3>
+              <p>/everythingNews/Your Query - for custom search</p>
+              <a href="/googleNews"><button type="button" class="btn btn-success btn-lg">Google News Original</button></a><br>
+              <a href="/topHeadLines"><button type="button" class="btn btn-success btn-lg">Top Headlines of All</button></a><br>
+              <a href="/newsBusiness"><button type="button" class="btn btn-success btn-lg">Business India</button></a><br>
+              <a href="/newsentertainment"><button type="button" class="btn btn-success btn-lg">Entertainment India</button></a><br>
+              <a href="/newshelth"><button type="button" class="btn btn-success btn-lg">Helth India</button></a><br>
+              <a href="/newsscience"><button type="button" class="btn btn-success btn-lg">Science India</button></a><br>
+              <a href="/newssports"><button type="button" class="btn btn-success btn-lg">Sports India</button></a><br>
+              <a href="/newstech"><button type="button" class="btn btn-success btn-lg">Technology India</button></a><br>
+            </div>
+            <div class="col-md-4">
+              <h3>Cricket Area</h3>
+              <p>/playerSearch/Player Name - for custom search</p>
+              <p>/playerStats/Player id - for player Statistics</p>
+              <p>/perticularScore/:match ID - for a Perticular Match</p>
+              <p>/matchInfo/:match ID - To Get The Current Match Information</p>
+              <p>/liveMatch/:match ID - To Get The Live Score Information</p>
+              <p>/commentry/:match ID - To Get The Commentry of the Match</p>
+              <a href="/ongoingMatch"><button type="button" class="btn btn-success btn-lg">Ongoing Match</button></a><br>
+              <a href="/matchCalender"><button type="button" class="btn btn-success btn-lg">Match Calender</button></a><br>
+            </div>
+            <div class="col-md-4">
+              <h3>Stock Market</h3>
+              <p>/currency/:originCurrency - Currency Exchange</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Weather Area</h3>
+              <a href="/weather"><button type="button" class="btn btn-success btn-lg">Show Weather with lag lat</button></a><br>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
