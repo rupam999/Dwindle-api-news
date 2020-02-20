@@ -272,6 +272,8 @@ app.get("*", function(req, res){
     res.send('<h1></h1>ERROR 404 NOT FOUND</h1>');
 });
 
-app.listen(3000, function(){
+let PORT = process.env.PORT || 3000
+
+app.listen(PORT, function(){
     console.log("Server Start at port 3000");
 });
