@@ -1,2 +1,2 @@
 web: node index.js
-heroku buildpacks:add --index 2 heroku/python
+pipinstall: pip install -r Cricbuzz
