@@ -12,6 +12,8 @@ app.get("/", function(req, res){
     res.render("index");
 });
 
+// http://newsapi.org/v2/top-headlines?country=in&q=india&apiKey=d1190b6999284451891e3feb54270c59
+
 app.get("/googleNews", function(req, res){
     let googleNewsAPI = require("google-news-json");
     googleNewsAPI.getNews(googleNewsAPI.SEACRH, "india", "en-IN", (err, response) => {
