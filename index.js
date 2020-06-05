@@ -1,10 +1,12 @@
-var express = require("express");
-var app = express();
-var request = require("request");
+const express = require("express");
+const app = express();
+const request = require("request");
+const dotenv = require("dotenv")
+dotenv.config();
 
-const apiKey = "d1190b6999284451891e3feb54270c59";
-const cricApi = 'ooACkxGzC1blhT5eRv2hU3vi1xB2';
-const apiCurrency = 'QEI0J2TZXKCHL43P';
+const apiKey = process.env.API_KEY
+const cricApi = process.env.CRIC_API
+const apiCurrency = process.env.API_CURRENCY
 
 app.set("view engine","ejs");
 
@@ -274,8 +276,8 @@ app.get("*", function(req, res){
     res.send('<h1></h1>ERROR 404 NOT FOUND</h1>');
 });
 
-let PORT = process.env.PORT || 3000
+let PORT = process.env.PORT || 8000
 
 app.listen(PORT, function(){
-    console.log("Server Start at port 3000");
+    console.log("Server Start at port 8000");
 });
