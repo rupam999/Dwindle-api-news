@@ -303,5 +303,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(app.get('port'), () => {
-    console.log("Server Start at port", app.get('port'));
+    console.log("Server Start at port", app.get('port'), app.get('host'));
 });
