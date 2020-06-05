@@ -26,5 +26,5 @@
 
 
 <h3>Stock Market</h3>
-              <p>/currency/:originCurrency - Currency Exchange</p>
+<p>/currency/:originCurrency - Currency Exchange</p>
 
